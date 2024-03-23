@@ -25,7 +25,7 @@ pipeline{
     }
             stage('git stage'){
                 steps{
-                    git branch: 'main', url: 'https://github.com/cloudtechmasters/springboot-maven-course-micro-svc.git'
+                    git branch: 'main', url: 'https://github.com/techopsmasters/springboot-maven-course-micro-svc.git'
                 }
             }
             stage('build maven project '){
