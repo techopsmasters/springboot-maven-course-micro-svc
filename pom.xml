@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<packaging>jar</packaging>
-	<groupId>com.cloudtechmasters</groupId>
+	<groupId>com.techopsmasters</groupId>
 	<artifactId>springboot-maven-course-micro-svc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-maven-course-micro-svc</name>
