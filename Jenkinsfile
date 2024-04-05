@@ -7,7 +7,7 @@ pipeline{
     job_root_dir="${env.WORKSPACE}"
     }
     tools { 
-        maven 'maven-3.8.1' 
+        maven 'maven-3.9.6' 
        
     }
     agent {
@@ -63,10 +63,10 @@ pipeline{
          }  
          success {  
              echo 'This will run only if successful' 
-			 mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'cloudtechmasters@gmail.com', mimeType: 'text/html', replyTo: 'cloudtechmasters@gmail.com', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "cloudtechmasters@gmail.com"; 
+			 mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'techopsmasters@gmail.com', mimeType: 'text/html', replyTo: 'techopsmasters@gmail.com', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "techopsmasters@gmail.com"; 
          }  
          failure {  
-             mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'cloudtechmasters@gmail.com', mimeType: 'text/html', replyTo: 'cloudtechmasters@gmail.com', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "cloudtechmasters@gmail.com";  
+             mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'techopsmasters@gmail.com', mimeType: 'text/html', replyTo: 'techopsmasters@gmail.com', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "techopsmasters@gmail.com";  
          }  
          unstable {  
              echo 'This will run only if the run was marked as unstable'  
